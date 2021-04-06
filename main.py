@@ -21,15 +21,12 @@ BLUE = 0,0,255
 GREEN = 0,255,0
 RED = 255,0,0
 
-current_path = os.path.dirname("C:\\Users\\teamb\\Desktop\\asteroid game")
-asteroid_folder_path = os.path.join(current_path, "asteroid game")
-
-SHOOTER = pygame.image.load(os.path.join(asteroid_folder_path, "shooter.png"))
+SHOOTER = pygame.image.load( "shooter.png")
 SHOOTER = pygame.transform.scale(SHOOTER, (50, 50))
 shooter_mask = pygame.mask.from_surface(SHOOTER)
 
-ASTEROID = pygame.image.load(os.path.join(asteroid_folder_path, "asteroid.png"))
-BACKGROUND = pygame.image.load(os.path.join(asteroid_folder_path, "background.png"))
+ASTEROID = pygame.image.load("asteroid.png")
+BACKGROUND = pygame.image.load("background.png")
 
 ########### classes ##################
 class Asteroid():# ateroid class
